@@ -4,6 +4,6 @@ resource "ibm_function_action" "nodehello" {
 
   exec {
     kind = "nodejs:6"
-    code = file("hellonode.js")
+    code = file("index.js")
   }
 }
