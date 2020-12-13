@@ -37,7 +37,7 @@ resource ibm_function_action "hello_action" {
   namespace = "${ibm_function_namespace.namespace.name}"
   exec {
     kind = "nodejs:10"
-    code = file("src/index.js")
+    code = "${file("src/index.js")}"
   }
   user_defined_parameters = <<EOF
         [
