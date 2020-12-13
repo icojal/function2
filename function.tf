@@ -22,18 +22,6 @@ data ibm_resource_group resource_group {
 
 ##############################################################################
 
-resource ibm_function_action "nodehello" {
-  name      = "action-name"
-  namespace = "Namespace-o8v"
-
-  exec {
-    kind = "nodejs:6"
-    #code = file("index.js")
-  }
-}
-
-
-/*
 resource "ibm_function_namespace" "namespace" {
   name              = var.function_namespace
   description       = "Expand 2020"
@@ -58,4 +46,4 @@ resource "ibm_function_action" "hello_action" {
     }
         ]
 EOF
-}*/
+}
