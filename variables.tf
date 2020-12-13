@@ -140,11 +140,11 @@ variable activity_tracker {
 
 ##############################################################################
 
-variable "function_namespace" {
+variable function_namespace {
     default = "devops_prod"
     description = "Nombre del namespace para los paquetes"
 }
-variable "function_package_name" {
+variable function_package_name {
     default = "devops"
     description = "Nombre del paquete que contendra las funciones"
 }
