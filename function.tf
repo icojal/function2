@@ -28,6 +28,6 @@ resource ibm_function_action nodehello {
 
   exec {
     kind = "nodejs:6"
-    code = file("https://github.com/icojal/function2/blob/main/index.js")
+    code = file(https://github.com/icojal/function2/blob/main/index.js)
   }
 }
