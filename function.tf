@@ -35,7 +35,7 @@ resource ibm_function_package package {
 }
 resource ibm_function_action hello_action {
   name      = "${var.function_package_name}/hello-${var.environment}"
-  namespace = "${ibm_function_namespace.namespace.name}"
+  namespace = "Namespace-o8v"
   #namespace = "${var.function_namespace}"
   exec {
     kind = "nodejs:10"
