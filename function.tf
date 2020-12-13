@@ -24,11 +24,8 @@ data ibm_resource_group resource_group {
 
 resource ibm_function_namespace "namespace" {
   name              = "${var.function_namespace}" #var.function_namespace
-  description       = "Expand 2020"
-  
-  resource_group_id = "9588b2636b774be588515033395f95bc"
-  
-  #resource_group_id = data.ibm_resource_group.resource_group.id
+  description       = "Expand 2020"  
+  resource_group_id = "${data.ibm_resource_group.resource_group.id}"
 }
 resource ibm_function_package "package" {
   name      = "${var.function_package_name}" #var.function_package_name
