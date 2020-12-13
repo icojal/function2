@@ -22,7 +22,7 @@ data ibm_resource_group resource_group {
 
 ##############################################################################
 
-resource "ibm_function_namespace" "namespace" {
+resource ibm_function_namespace namespace {
   name              = var.function_namespace
   description       = "Expand 2020"
   resource_group_id = data.ibm_resource_group.resource_group.id
