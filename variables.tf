@@ -141,7 +141,7 @@ variable activity_tracker {
 ##############################################################################
 
 variable function_namespace {
-    default = "devops_prod"
+    default = "Namespace-o8v"
     description = "Nombre del namespace para los paquetes"
 }
 variable function_package_name {
