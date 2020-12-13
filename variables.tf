@@ -148,3 +148,7 @@ variable function_package_name {
     default = "devops"
     description = "Nombre del paquete que contendra las funciones"
 }
+variable "environment" {
+    default = "dev"
+    description = "(Requerido)"
+}
