@@ -34,7 +34,7 @@ resource ibm_function_package "package" {
 }
 resource ibm_function_action "hello_action" {
   name      = "${var.function_package_name}/hello-${var.environment}"
-  namespace = "${var.ibm_function_namespace.namespace.name}"
+  namespace = "${ibm_function_namespace.namespace.name}"
   exec {
     kind = "nodejs:10"
     code = "${file("src/index.js")}"
