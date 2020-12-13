@@ -24,7 +24,7 @@ data ibm_resource_group resource_group {
 
 resource ibm_function_action "nodehello" {
   name      = "action-name"
-  namespace = "function-namespace-name"
+  namespace = "Namespace-o8v"
 
   exec {
     kind = "nodejs:6"
