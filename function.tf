@@ -30,7 +30,8 @@ resource ibm_function_namespace "namespace" {
 }
 resource ibm_function_package "package" {
   name      = "${var.function_package_name}" #var.function_package_name
-  namespace = "${ibm_function_namespace.namespace.name}"
+    namespace = "${var.function_namespace}"
+  #namespace = "${ibm_function_namespace.namespace.name}"
 }
 resource ibm_function_action "hello_action" {
   name      = "${var.function_package_name}/hello-${var.environment}"
